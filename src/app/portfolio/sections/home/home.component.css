@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.grid-items {
+    display: flex;
+}
+
+/*Medium*/
+@media screen and (max-width: 1024px) {
+    .ilustration {
+        width: 326px;
+        height: 328px;
+    }
+}
+
+/*Small*/
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-items {
+        justify-content: center;
+    }
+}

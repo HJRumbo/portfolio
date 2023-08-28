@@ -1,0 +1,46 @@
+[
+    {
+        "startDate": "2023-03-01",
+        "endDate": "",
+        "name": "GPCredit",
+        "position": "Desarrollador full stack",
+        "responsabilities": [
+            "Aplicación web para una empresa prestadora de dinero, que lleva la contabilidad del dinero prestado y el total recaudado",
+            "Implementación de la autenticación y autorización con JWT y refresh token",
+            "Uso de ASP.NET Identity para llevar el control de usuarios, roles y contraseñas",
+            "El software fue desarrollado con arquitectura limpia"
+        ],
+        "skills": [
+            ".Net",
+            "Angular",
+            "Arquitectura limpia",
+            "ASP.NET Identity",
+            "Json Web Token",
+            "SQL Server",
+            "Git",
+            "C#",
+            "TypeScript"
+        ]
+    },
+    {
+        "startDate": "2022-01-01",
+        "endDate": "2022-06-01",
+        "name": "Software de recaudos",
+        "position": "Desarrollador full stack",
+        "responsabilities": [
+            "Aplicación web para una empresa de vigilancia, con Angular y .Net",
+            "Desarrollado con la arquitectura en 3 capas",
+            "Implementé JWT para la autenticación y autorización"
+        ],
+        "skills": [
+            ".Net",
+            "Angular",
+            "Arquitectura en 3 capas",
+            "Json Web Token",
+            "SQL Server",
+            "Git",
+            "C#",
+            "TypeScript"
+        ]
+    }
+]

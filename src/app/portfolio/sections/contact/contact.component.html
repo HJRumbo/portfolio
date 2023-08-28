@@ -1,0 +1,18 @@
+<div class="contact-container">
+    <div>
+        <h2><strong>Contacto</strong></h2>
+        <p><strong>Gracias por visitar mi portafolio</strong></p>
+        <p>Si deseas contactarte conmigo, puedes hacerlo a través de los siguientes medios</p>
+
+        <div class="social-medias-container">
+            <a *ngFor="let item of socialMedias" [href]="item.link" [target]="item.newTab ? '_blank' : ''"><i [class]="item.icon"></i></a>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <button class="logo bg-blue text-white" routerLink="/" fragment="">
+            <img src="../../../assets/Logo_white.svg" alt="">
+            <p class="text-logo">HERNANDO RUMBO</p>
+        </button>
+    </div>
+</div>

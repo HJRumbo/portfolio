@@ -1,0 +1,36 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--blue);
+    min-height: 400px;
+    color: var(--white);
+    padding: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-medias-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+i {
+    font-size: 24px;
+}
+
+/*Small*/
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 10px;
+    }
+}

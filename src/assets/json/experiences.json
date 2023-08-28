@@ -1,0 +1,29 @@
+[
+    {
+        "startDate": "2022-06",
+        "endDate": "2023-03",
+        "name": "Carvajal Servicios",
+        "position": "Ingeniero de desarrollo",
+        "responsabilities": [
+            "Desarrollar Web Api en .net 6 con arquitectura limpia",
+            "Desarrollar Api Gateway en .net 6 con Ocelot",
+            "Agregar funcionalidades a un software web en MVC .Net",
+            "Manejo de base de datos Oracle e informix",
+            "Manejo básico de Azure DevOps"
+        ],
+        "skills": [
+            ".Net",
+            "Angular",
+            "C#",
+            "TypeScript",
+            "JQuery",
+            "Arquitectura limpia",
+            "Git",
+            "Scrum",
+            "Oracle",
+            "Informix",
+            "MongoDB",
+            "Azure DevOps"
+        ]
+    }
+]

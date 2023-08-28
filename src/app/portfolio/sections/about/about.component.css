@@ -1,0 +1,31 @@
+.grid-container {
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 30px;
+    text-align: justify;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.grid-items {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/*Small*/
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .grid-items .btn-contact {
+        text-align: center;
+    }
+}

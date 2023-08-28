@@ -1,0 +1,34 @@
+<div class="nav-menu" [ngClass]="isNavbarFixed?'scrolled':'not-scrolled'" (scroll) = "onScroll()">
+    <button class="logo bg-white" routerLink="/" fragment="">
+        <img src="../../../assets/Logo.svg" alt="">
+        <p class="text-logo">HERNANDO RUMBO</p>
+    </button>
+    <ul class="list-menu">
+        <li *ngFor="let item of menuItems">
+            <a [routerLink]="item.homePath" [fragment]="item.fragment">{{ item.title | uppercase }}</a>
+        </li>
+    </ul>
+    <button class="icon-btn" (click)="overlay()"><i class="fa-solid fa-bars"></i></button>
+</div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay"  [style.width]="isOverlayOpen ? '100%': '0'">
+
+    <div class="overlay-bar">
+        <button class="logo bg-white" (click)="overlay()" routerLink="/" fragment="">
+            <img src="../../../assets/Logo.svg" alt="">
+            <p class="text-logo">HERNANDO RUMBO</p>
+        </button>
+    
+        <button class="icon-btn close-btn" (click)="overlay()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="overlay-content">
+        <ul class="list-menu-overlay">
+            <li *ngFor="let item of menuItems">
+                <a [routerLink]="item.homePath" [fragment]="item.fragment" (click)="overlay()">{{ item.title | uppercase }}</a>
+            </li>
+        </ul>
+    </div>
+
+</div>

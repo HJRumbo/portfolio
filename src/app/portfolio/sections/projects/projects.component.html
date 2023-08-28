@@ -1,0 +1,23 @@
+<div class="section-container">
+    <div class="title-section">
+        <h2 class="text-blue"><strong>Proyectos</strong></h2>
+        <p>Aquí encontrará algunos de mis proyectos personales y proyectos en los que he colaborado.</p>
+    </div>
+
+    <div class="experience-card" *ngFor="let project of projects">
+        <div>
+            <p style="font-weight: 300">{{ project.startDate | date: 'MMM y' }} - {{ !project.endDate ? 'Presente': project.endDate | date: 'MMM y' }}</p>
+        </div>
+        <div>
+            <h3><strong>{{ project.name }}</strong></h3>
+            <p style="font-style: italic">{{ project.position }}</p>
+            <ul>
+                <li *ngFor="let responsability of project.responsabilities">{{ responsability }}</li>
+            </ul>
+
+            <div class="skills-container">
+                <span class="skill" *ngFor="let skill of project.skills">{{ skill }}</span>
+            </div>
+        </div>
+    </div>
+</div>
