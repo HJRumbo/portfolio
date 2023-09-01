@@ -5,13 +5,14 @@
         <p>Si deseas contactarte conmigo, puedes hacerlo a través de los siguientes medios</p>
 
         <div class="social-medias-container">
-            <a *ngFor="let item of socialMedias" [href]="item.link" [target]="item.newTab ? '_blank' : ''"><i [class]="item.icon"></i></a>
+            <a *ngFor="let item of socialMedias" class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''" [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
         </div>
+        <p>hernandojosern@gmail.com</p>
     </div>
 
     <div class="logo-container">
         <button class="logo bg-blue text-white" routerLink="/" fragment="">
-            <img src="../../../assets/Logo_white.svg" alt="">
+            <img src="../../../assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32px" height="32px">
             <p class="text-logo">HERNANDO RUMBO</p>
         </button>
     </div>

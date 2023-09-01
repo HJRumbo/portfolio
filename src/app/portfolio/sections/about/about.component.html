@@ -1,26 +1,49 @@
 <div class="section-container grid-container">
-    <div class="grid-items">
-        <div class="text-white">
-            <h2 class="title-section">Sobre mí</h2>
-            <p class="justified-text">Soy un ingeniero de sistemas y estudiante de especialización en ingeniería de
-                software apasionado por el desarrollo de software. Poseo más de 1 año
-                de experiencia como desarrollador fullstack, trabajando con tecnologías como .Net y Angular, entre
-                otras. Mi principal motivación es aprender y mejorar constantemente, siempre buscando ampliar mis
-                habilidades y conocimientos en el campo de la ingeniería de software. Me considero una persona
-                proactiva, comprometida y capaz de enfrentar desafíos con determinación.</p>
-            <div class="btn-contact" routerLink="" fragment="contact">
-                <button class="my-btn white-btn-outline">
-                    Contáctame
-                </button>
-            </div>
+    <div class="text-white">
+        <h2 class="title-section">Sobre mí</h2>
+        <p class="justified-text">Soy un ingeniero de sistemas y estudiante de especialización en ingeniería de
+            software apasionado por el desarrollo de software. Poseo más de 1 año
+            de experiencia como desarrollador fullstack, trabajando con tecnologías como .Net y Angular, entre
+            otras. Mi principal motivación es aprender y mejorar constantemente, siempre buscando ampliar mis
+            habilidades y conocimientos en el campo de la ingeniería de software. Me considero una persona
+            proactiva, comprometida y capaz de enfrentar desafíos con determinación.</p>
+        <div class="btn-contact" routerLink="" fragment="contact">
+            <button class="my-btn white-btn-outline">
+                Contáctame
+            </button>
         </div>
     </div>
-    <div class="grid-items">
-        <div class="text">
-            <h2 class="text-white title-section">Habilidades</h2>
-            <div class="skills-container">
-                <span class="skill" *ngFor="let skill of skills">{{ skill.name }}</span>
+    <div class="text">
+        <h2 class="text-white title-section">Habilidades</h2>
+        <div class="skills-container">
+            <span class="skill" *ngFor="let skill of about.skills">{{ skill.name }}</span>
+        </div>
+    </div>
+    <div class="text-white">
+        <h2 class="title-section">Educación</h2>
+        <hr>
+        <div *ngFor="let education of about.educations">
+            <p><strong>{{ education.career }}</strong></p>
+            <p>{{ education.institution }}</p>
+
+            <div class="date-city italic-text">
+                <p>{{ education.startDate }} - {{ education.endDate ? education.endDate : 'Presente' }}</p>
+                <p>{{ education.city }}</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="text-white">
+        <h2 class="title-section">Certificaciones</h2>
+        <hr>
+        <div *ngFor="let certification of about.certifications">
+            <p>{{ certification.name }}</p>
+
+            <div class="div-link">
+                <p class="italic-text">{{ certification.expeditionDate | date: 'MMM y' }}</p>
+                <a class="a-icons" [href]="certification.link" target="_blank" aria-label="Enlace a las certificación"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
+        <hr>
     </div>
 </div>

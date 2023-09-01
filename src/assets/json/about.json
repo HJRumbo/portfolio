@@ -1,0 +1,96 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "name": ".Net"
+        },
+        {
+            "id": "2",
+            "name": "Angular"
+        },
+        {
+            "id": "3",
+            "name": "TypeScript"
+        },
+        {
+            "id": "4",
+            "name": "C#"
+        },
+        {
+            "id": "5",
+            "name": "JavaScript"
+        },
+        {
+            "id": "6",
+            "name": "JQuery"
+        },
+        {
+            "id": "7",
+            "name": "Arquitectura limpia"
+        },
+        {
+            "id": "8",
+            "name": "Git"
+        },
+        {
+            "id": "9",
+            "name": "Scrum"
+        },
+        {
+            "id": "10",
+            "name": "CQRS"
+        },
+        {
+            "id": "11",
+            "name": "Patrones de diseño"
+        },
+        {
+            "id": "12",
+            "name": "Docker"
+        },
+        {
+            "id": "13",
+            "name": "SQL"
+        },
+        {
+            "id": "14",
+            "name": "SQL Server"
+        },
+        {
+            "id": "15",
+            "name": "Oracle"
+        },
+        {
+            "id": "16",
+            "name": "Informix"
+        },
+        {
+            "id": "17",
+            "name": "MongoDB"
+        }
+    ],
+    "educations": [
+        {
+            "institution": "Universidad Popular Del Cesar",
+            "career": "Ingeniería de sistemas",
+            "startDate": "2017",
+            "endDate": "2022",
+            "city": "Valledupar, Cesar"
+        },
+        {
+            "institution": "Universidad Popular Del Cesar",
+            "career": "Especialización en ingeniería de software",
+            "startDate": "2022",
+            "endDate": "",
+            "city": "Valledupar, Cesar"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Scrum Foundation Professional Certificate - SFPC™ (v2020)",
+            "expeditionDate": "2023-06",
+            "certifying": "Certiprof",
+            "link": "https://www.credly.com/badges/6644b48f-c6f2-4f62-b72e-c367932dca1a/linked_in_profile"
+        }
+    ]
+}

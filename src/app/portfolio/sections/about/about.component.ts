@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../../models/skill';
-import { SkillService } from '../../services/skill.service';
+import { About, Skill } from '../../models/about';
+import { AboutService } from '../../services/about.service';
 
 @Component({
   selector: 'app-about',
@@ -9,14 +9,19 @@ import { SkillService } from '../../services/skill.service';
 })
 export class AboutComponent implements OnInit {
 
-  skills!: Skill[];
+  about!: About;
 
-  constructor(private skillService: SkillService) {}
+  constructor(private aboutService: AboutService) 
+  {
+    this.about = new About;
+  }
 
   ngOnInit(): void {
-    this.skillService.getSkills()
-      .subscribe(skills => {
-        this.skills = skills;
+    this.aboutService.getAboutMeInfo()
+      .subscribe(about => {
+        this.about = about;
+        console.log(about);
+        
       });
   }
   

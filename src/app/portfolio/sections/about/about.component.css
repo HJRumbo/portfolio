@@ -3,19 +3,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    column-gap: 30px;
+    gap: 60px 30px;
     text-align: justify;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.grid-items {
-    display: flex;
-    justify-content: center;
+h2 { font-weight: bold; }
+
+.education-card {
+    border: solid 1px var(--white);
+    padding: 8px;
+    border-radius: 8px;
 }
 
-h2 {
-    font-weight: bold;
+.date-city {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    border: 1px solid var(--white);
+}
+
+.div-link {
+    display: flex;
+    column-gap: 10px;
 }
 
 /*Small*/
@@ -25,7 +38,7 @@ h2 {
         row-gap: 30px;
     }
 
-    .grid-items .btn-contact {
+    .btn-contact {
         text-align: center;
     }
 }

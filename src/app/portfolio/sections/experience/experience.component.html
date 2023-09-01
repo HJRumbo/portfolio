@@ -6,11 +6,11 @@
 
     <div class="experience-card" *ngFor="let project of projects">
         <div>
-            <p style="font-weight: 300">{{ project.startDate | date: 'MMM y' }} - {{ !project.endDate ? 'Presente': project.endDate | date: 'MMM y' }}</p>
+            <p class="light-text">{{ project.startDate | date: 'MMM y' }} - {{ !project.endDate ? 'Presente': project.endDate | date: 'MMM y' }}</p>
         </div>
         <div>
             <h3><strong>{{ project.name }}</strong></h3>
-            <p style="font-style: italic">{{ project.position }}</p>
+            <p class="italic-text">{{ project.position }}</p>
             <ul>
                 <li *ngFor="let responsability of project.responsabilities">{{ responsability }}</li>
             </ul>

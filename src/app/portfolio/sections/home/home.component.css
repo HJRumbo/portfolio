@@ -4,9 +4,9 @@
     align-items: center;
 }
 
-.grid-items {
-    display: flex;
-}
+.grid-items { display: flex; }
+
+.div-ilustration { justify-content: end; }
 
 /*Medium*/
 @media screen and (max-width: 1024px) {
@@ -14,6 +14,8 @@
         width: 326px;
         height: 328px;
     }
+
+    .div-ilustration { justify-content: center; }
 }
 
 /*Small*/
