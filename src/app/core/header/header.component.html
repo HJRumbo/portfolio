@@ -1,5 +1,5 @@
 <div class="nav-menu" [ngClass]="isNavbarFixed?'scrolled':'not-scrolled'" (scroll) = "onScroll()">
-    <button aria-label="Logo and home button" class="logo bg-white" routerLink="/" fragment="">
+    <button class="logo bg-white" routerLink="/" fragment="">
         <img src="../../../assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32px" height="32px">
         <p class="text-logo">HERNANDO RUMBO</p>
     </button>
@@ -15,7 +15,7 @@
 <div id="myNav" class="overlay"  [style.width]="isOverlayOpen ? '100%': '0'">
 
     <div class="overlay-bar">
-        <button aria-label="Logo and home overlay button" class="logo bg-white" (click)="overlay()" routerLink="/" fragment="">
+        <button class="logo bg-white" (click)="overlay()" routerLink="/" fragment="">
             <img src="../../../assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32px" height="32px">
             <p class="text-logo">HERNANDO RUMBO</p>
         </button>

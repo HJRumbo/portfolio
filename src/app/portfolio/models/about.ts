@@ -1,5 +1,5 @@
 export class About {
-    skills!: Skill[];
+    skills!: string[];
     educations!: Education[];
     certifications!: Certification[]
 }

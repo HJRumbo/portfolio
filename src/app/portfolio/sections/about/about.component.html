@@ -2,7 +2,7 @@
     <div class="text-white">
         <h2 class="title-section">Sobre mí</h2>
         <p class="justified-text">Soy un ingeniero de sistemas y estudiante de especialización en ingeniería de
-            software apasionado por el desarrollo de software. Poseo más de 1 año
+            software apasionado por el desarrollo de software. Poseo más de 2 años
             de experiencia como desarrollador fullstack, trabajando con tecnologías como .Net y Angular, entre
             otras. Mi principal motivación es aprender y mejorar constantemente, siempre buscando ampliar mis
             habilidades y conocimientos en el campo de la ingeniería de software. Me considero una persona
@@ -16,7 +16,7 @@
     <div class="text">
         <h2 class="text-white title-section">Habilidades</h2>
         <div class="skills-container">
-            <span class="skill" *ngFor="let skill of about.skills">{{ skill.name }}</span>
+            <span class="skill" *ngFor="let skill of about.skills">{{ skill }}</span>
         </div>
     </div>
     <div class="text-white">
@@ -38,9 +38,9 @@
         <hr>
         <div *ngFor="let certification of about.certifications">
             <p>{{ certification.name }}</p>
-
+            <p><strong>{{ certification.certifying }}</strong></p>
             <div class="div-link">
-                <p class="italic-text">{{ certification.expeditionDate | date: 'MMM y' }}</p>
+                <p class="italic-text">Expedición: {{ certification.expeditionDate | date: 'MMM y' }}</p>
                 <a class="a-icons" [href]="certification.link" target="_blank" aria-label="Enlace a las certificación"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>

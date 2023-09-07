@@ -1,73 +1,25 @@
 {
     "skills": [
-        {
-            "id": "1",
-            "name": ".Net"
-        },
-        {
-            "id": "2",
-            "name": "Angular"
-        },
-        {
-            "id": "3",
-            "name": "TypeScript"
-        },
-        {
-            "id": "4",
-            "name": "C#"
-        },
-        {
-            "id": "5",
-            "name": "JavaScript"
-        },
-        {
-            "id": "6",
-            "name": "JQuery"
-        },
-        {
-            "id": "7",
-            "name": "Arquitectura limpia"
-        },
-        {
-            "id": "8",
-            "name": "Git"
-        },
-        {
-            "id": "9",
-            "name": "Scrum"
-        },
-        {
-            "id": "10",
-            "name": "CQRS"
-        },
-        {
-            "id": "11",
-            "name": "Patrones de diseño"
-        },
-        {
-            "id": "12",
-            "name": "Docker"
-        },
-        {
-            "id": "13",
-            "name": "SQL"
-        },
-        {
-            "id": "14",
-            "name": "SQL Server"
-        },
-        {
-            "id": "15",
-            "name": "Oracle"
-        },
-        {
-            "id": "16",
-            "name": "Informix"
-        },
-        {
-            "id": "17",
-            "name": "MongoDB"
-        }
+        ".Net",
+        "Angular",
+        "TypeScript",
+        "CSS",
+        "HTML",
+        "C#",
+        "JavaScript",
+        "JQuery",
+        "Arquitectura limpia",
+        "Git",
+        "Metodologías ágiles",
+        "Scrum",
+        "CQRS",
+        "Patrones de diseño",
+        "Docker",
+        "SQL",
+        "SQL Server",
+        "Oracle",
+        "Informix",
+        "MongoDB"
     ],
     "educations": [
         {
