@@ -1,5 +1,36 @@
 [
     {
+        "startDate": "2023-11",
+        "endDate": "",
+        "name": "Gestion Integral Para Control De Obras SAS",
+        "position": "Desarrollador de software",
+        "responsabilities": [
+            "Desarrollar Web API con C# .Net Core 3.1 con arquitectura limpia",
+            "Desarrollo FrontEnd con Angular",
+            "Soportar y desallorar nuevas funcionalidades  a un software web en Visual Basic .Net Framework 4.8 y Javascript",
+            "Manejo de base de datos SQL Server",
+            "Gestión de historias de usuario y tareas con Azure DevOps",
+            "Manejo de repositorio con Azure DevOps",
+            "Adoptar el marco de trabajo ágil SCRUM",
+            "Implementación de autenticación con JWT"
+        ],
+        "skills": [
+            ".Net",
+            "Angular",
+            "C#",
+            "TypeScript",
+            "Visual Basic",
+            "JQuery",
+            "Ajax",
+            "Arquitectura limpia",
+            "Git",
+            "Scrum",
+            "SQL Server",
+            "Azure DevOps",
+            "Json Web Token"
+        ]
+    },
+    {
         "startDate": "2022-06",
         "endDate": "2023-03",
         "name": "Carvajal Servicios",

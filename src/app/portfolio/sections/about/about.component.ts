@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { About, Skill } from '../../models/about';
+import { Certification, Education } from '../../models/about';
 import { AboutService } from '../../services/about.service';
 
 @Component({
@@ -9,20 +9,30 @@ import { AboutService } from '../../services/about.service';
 })
 export class AboutComponent implements OnInit {
 
-  about!: About;
+  skills!: string[];
+  educationList!: Education[];
+  certifications!: Certification[]; 
 
-  constructor(private aboutService: AboutService) 
-  {
-    this.about = new About;
-  }
+  constructor(private aboutService: AboutService) { }
 
   ngOnInit(): void {
-    this.aboutService.getAboutMeInfo()
-      .subscribe(about => {
-        this.about = about;
-        console.log(about);
-        
-      });
+    this.getSkills();
+    this.getEducationList();
+    this.getCertifications();
+  }
+
+  getSkills() {
+    this.aboutService.getSkills().subscribe(skills => this.skills = skills );
+  }
+
+  getEducationList() {
+    this.aboutService.getEducationList().subscribe(educationList => this.educationList = educationList );
+  }
+
+  getCertifications() {
+    this.aboutService.getCertifications().subscribe(certifications => this.certifications = certifications );
   }
   
 }
+
+

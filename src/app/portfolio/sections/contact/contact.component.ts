@@ -24,6 +24,12 @@ export class ContactComponent {
       link: 'https://www.linkedin.com/in/hernando-jose-rumbo-nu%C3%B1ez-a97984236/',
       ariaLabel: 'Enlace a mi perfil de LinkedIn',
       newTab: true
+    },
+    {
+      icon: 'fa-brands fa-whatsapp',
+      link: 'https://wa.me/573045644169?text=Hola,%20Hernando!',
+      ariaLabel: 'Chat de Whatsapp',
+      newTab: true
     }
   ]
 }

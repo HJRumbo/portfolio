@@ -16,13 +16,13 @@
     <div class="text">
         <h2 class="text-white title-section">Habilidades</h2>
         <div class="skills-container">
-            <span class="skill" *ngFor="let skill of about.skills">{{ skill }}</span>
+            <span class="skill" *ngFor="let skill of skills">{{ skill }}</span>
         </div>
     </div>
     <div class="text-white">
         <h2 class="title-section">Educación</h2>
         <hr>
-        <div *ngFor="let education of about.educations">
+        <div *ngFor="let education of educationList">
             <p><strong>{{ education.career }}</strong></p>
             <p>{{ education.institution }}</p>
 
@@ -36,14 +36,14 @@
     <div class="text-white">
         <h2 class="title-section">Certificaciones</h2>
         <hr>
-        <div *ngFor="let certification of about.certifications">
+        <div *ngFor="let certification of certifications">
             <p>{{ certification.name }}</p>
             <p><strong>{{ certification.certifying }}</strong></p>
             <div class="div-link">
                 <p class="italic-text">Expedición: {{ certification.expeditionDate | date: 'MMM y' }}</p>
                 <a class="a-icons" [href]="certification.link" target="_blank" aria-label="Enlace a las certificación"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
+            <hr>
         </div>
-        <hr>
     </div>
 </div>

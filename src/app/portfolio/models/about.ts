@@ -4,11 +4,6 @@ export class About {
     certifications!: Certification[]
 }
 
-export class Skill {
-    id!: number;
-    name!: string
-}
-
 export class Education {
     institution!: string;
     career!: string;

@@ -10,6 +10,7 @@
         "JQuery",
         "Arquitectura limpia",
         "Git",
+        "GitHub Actions",
         "Metodologías ágiles",
         "Scrum",
         "CQRS",
@@ -19,21 +20,22 @@
         "SQL Server",
         "Oracle",
         "Informix",
-        "MongoDB"
+        "MongoDB",
+        "Figma"
     ],
     "educations": [
         {
             "institution": "Universidad Popular Del Cesar",
-            "career": "Ingeniería de sistemas",
-            "startDate": "2017",
-            "endDate": "2022",
+            "career": "Especialización en ingeniería de software",
+            "startDate": "2023",
+            "endDate": "",
             "city": "Valledupar, Cesar"
         },
         {
             "institution": "Universidad Popular Del Cesar",
-            "career": "Especialización en ingeniería de software",
-            "startDate": "2022",
-            "endDate": "",
+            "career": "Ingeniería de sistemas",
+            "startDate": "2017",
+            "endDate": "2023",
             "city": "Valledupar, Cesar"
         }
     ],

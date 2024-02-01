@@ -14,9 +14,17 @@
     width: 100%;
 }
 
+.contact-info { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 0.5rem; 
+}
+
 .social-medias-container {
     display: flex;
-    column-gap: 10px;
+    column-gap: 40px;
 }
 
 i {
@@ -27,5 +35,12 @@ i {
 @media screen and (max-width: 768px) {
     .contact-container {
         padding: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        row-gap: 30px;
     }
 }

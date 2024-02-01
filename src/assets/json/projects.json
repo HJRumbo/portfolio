@@ -1,7 +1,26 @@
 [
     {
-        "startDate": "2023-03-01",
+        "startDate": "2023-08-01",
         "endDate": "",
+        "name": "Mi portafolio web",
+        "position": "Desarrollador frontend",
+        "responsabilities": [
+            "Diseño de mockups de mi portafolio web con figma",
+            "Desarrollo del portafolio web con Angular, HTML, CSS y TypeScript"
+        ],
+        "skills": [
+            "Angular",
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Figma",
+            "Git",
+            "GitHub Actions"
+        ]
+    },
+    {
+        "startDate": "2023-03-01",
+        "endDate": "2023-07-01",
         "name": "GPCredit",
         "position": "Desarrollador full stack",
         "responsabilities": [
