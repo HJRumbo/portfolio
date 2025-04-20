@@ -1,24 +1,18 @@
-<div class="contact-container">
-    <div class="contact-info">
-        <div>
-            <h2><strong>Redes sociales</strong></h2>
-            <div class="social-medias-container">
-                <a *ngFor="let item of socialMedias" class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''" [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
+<div class="section-container contact-container">
+        <div class="logo-container">
+            <button class="logo bg-blue text-white" routerLink="/" fragment="">
+                <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
+            </button>
+            <p>Hernando Rumbo</p>
+        </div>
+
+        
+        <div class="social-medias-container">
+            <div>
+                <p>Contacto</p>
+            </div>
+            <div *ngFor="let item of socialMedias" >
+                <a class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''" [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
             </div>
         </div>
-    
-        <div>
-            <h2><strong>Contacto</strong></h2>
-            <p><strong>Ubicación: </strong><span>Valledupar, Cesar</span></p>
-            <p><strong>Teléfono: </strong><span>+57 3045644169</span></p>
-            <p><strong>Correo: </strong><span>hernandojosern@gmail.com</span></p>
-        </div>
-    </div>
-
-    <div class="logo-container">
-        <button class="logo bg-blue text-white" routerLink="/" fragment="">
-            <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
-            <p class="text-logo">HERNANDO RUMBO</p>
-        </button>
-    </div>
 </div>

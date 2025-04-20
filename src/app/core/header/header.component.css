@@ -36,8 +36,15 @@ a {
 }
 
 a:hover {
-    border-bottom: 1px solid;
+    border-bottom: 3px solid;
     color: var(--blue);
+    font-weight: bold;
+}
+
+a.active {
+    border-bottom: 3px solid;
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .icon-btn {

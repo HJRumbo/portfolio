@@ -1,11 +1,12 @@
 <div class="nav-menu" [ngClass]="isNavbarFixed?'scrolled':'not-scrolled'" (scroll) = "onScroll()">
-    <button class="logo bg-white" routerLink="/" fragment="">
+    <button class="logo bg-white" routerLink="/" [fragment]="homeFragment" (click)="setActiveFragment(homeFragment)">
         <img src="/assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
-        <p class="text-logo">HERNANDO RUMBO</p>
+        <p class="text-logo">Hernando Rumbo</p>
     </button>
     <ul class="list-menu">
         <li *ngFor="let item of menuItems">
-            <a [routerLink]="item.homePath" [fragment]="item.fragment">{{ item.title | uppercase }}</a>
+            <a [routerLink]="homePath" [fragment]="item.fragment" [ngClass]="{'active': activeFragment === item.fragment}"
+            (click)="setActiveFragment(item.fragment)">{{ item.title | titlecase }}</a>
         </li>
     </ul>
     <button aria-label="Open overlay button" class="icon-btn" (click)="overlay()"><i class="fa-solid fa-bars"></i></button>
@@ -17,7 +18,7 @@
     <div class="overlay-bar">
         <button class="logo bg-white" (click)="overlay()" routerLink="/" fragment="">
             <img src="/assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
-            <p class="text-logo">HERNANDO RUMBO</p>
+            <p class="text-logo">Hernando Rumbo</p>
         </button>
     
         <button aria-label="Close overlay button" class="icon-btn close-btn" (click)="overlay()"><i class="fa-solid fa-xmark"></i></button>
@@ -26,7 +27,7 @@
     <div class="overlay-content">
         <ul class="list-menu-overlay">
             <li *ngFor="let item of menuItems">
-                <a [routerLink]="item.homePath" [fragment]="item.fragment" (click)="overlay()">{{ item.title | uppercase }}</a>
+                <a [routerLink]="homePath" [fragment]="item.fragment" (click)="overlay()">{{ item.title | titlecase }}</a>
             </li>
         </ul>
     </div>

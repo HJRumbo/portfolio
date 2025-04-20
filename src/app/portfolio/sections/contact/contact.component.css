@@ -1,30 +1,26 @@
 .contact-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--blue);
-    min-height: 400px;
+    min-height: 100px;
     color: var(--white);
-    padding: 0 30px;
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
 }
 
-.contact-info { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 0.5rem; 
+p {
+    margin: 0;
 }
 
 .social-medias-container {
     display: flex;
-    column-gap: 40px;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 i {

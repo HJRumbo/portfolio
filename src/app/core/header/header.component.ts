@@ -6,11 +6,15 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  homePath: string = '/';
+  homeFragment: string = '';
+  activeFragment: string = '';
   menuItems = [
-    { title: 'Sobre mí', homePath: '/', fragment: 'about', pagePath: '/about' },
-    { title: 'Experiencia', homePath: '/', fragment: 'experience', pagePath: '/experience' },
-    { title: 'Proyectos', homePath: '/', fragment: 'projects', pagePath: '/projects' },
-    { title: 'Contacto', homePath: '/', fragment: 'contact', pagePath: '/contact' }
+    { title: 'Inicio', fragment: this.homeFragment },
+    { title: 'Sobre mí', fragment: 'about' },
+    { title: 'Experiencia', fragment: 'experience' },
+    { title: 'Proyectos', fragment: 'projects' },
+    { title: 'Contacto', fragment: 'contact' }
   ];
 
   isOverlayOpen = false;
@@ -28,4 +32,7 @@ export class HeaderComponent {
     }
   }
 
+  setActiveFragment(fragment: string) {
+    this.activeFragment = fragment;
+  }
 }

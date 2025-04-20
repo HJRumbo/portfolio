@@ -21,7 +21,7 @@ export class ContactComponent {
     },
     {
       icon: 'fa-brands fa-linkedin',
-      link: 'https://www.linkedin.com/in/hernando-jose-rumbo-nu%C3%B1ez-a97984236/',
+      link: 'https://www.linkedin.com/in/hernando-rumbo/',
       ariaLabel: 'Enlace a mi perfil de LinkedIn',
       newTab: true
     },
