@@ -5,8 +5,9 @@
         "name": "Mi portafolio web",
         "position": "Desarrollador frontend",
         "responsabilities": [
-            "Diseño de mockups de mi portafolio web con figma",
-            "Desarrollo del portafolio web con Angular, HTML, CSS y TypeScript"
+            "Diseñar los mockups de mi portafolio web con figma",
+            "Desarrollar el portafolio web con Angular, HTML, CSS y TypeScript",
+            "Implementar GitHub Actions"
         ],
         "skills": [
             "Angular",
@@ -24,10 +25,12 @@
         "name": "GPCredit",
         "position": "Desarrollador full stack",
         "responsabilities": [
-            "Aplicación web para una empresa prestadora de dinero, que lleva la contabilidad del dinero prestado y el total recaudado",
-            "Implementación de la autenticación y autorización con JWT y refresh token",
-            "Uso de ASP.NET Identity para llevar el control de usuarios, roles y contraseñas",
-            "El software fue desarrollado con arquitectura limpia"
+            "Analizar los requerimientos del sistema para una aplicación web para una empresa prestadora de dinero",
+            "Diseñar el modelado UML y modelado de datos",
+            "Desarrollar la aplicación web con Angular y .Net Core",
+            "Implementar la autenticación y autorización con JWT y refresh token",
+            "Implementar Identity .Net para llevar el control de usuarios, roles y contraseñas",
+            "Implementar la arquitectura limpia"
         ],
         "skills": [
             ".Net",
@@ -47,9 +50,11 @@
         "name": "Software de recaudos",
         "position": "Desarrollador full stack",
         "responsabilities": [
-            "Aplicación web para una empresa de vigilancia, con Angular y .Net",
-            "Desarrollado con la arquitectura en 3 capas",
-            "Implementé JWT para la autenticación y autorización"
+            "Análisar los requerimientos del sistema para una aplicación web para una empresa de vigilancia",
+            "Diseñar el modelado UML y modelado de datos", 
+            "Desarrollar la aplicación web Angular y .Net Core",
+            "Implementar la arquitectura en 3 capas",
+            "Implementar JWT para la autenticación y autorización"
         ],
         "skills": [
             ".Net",

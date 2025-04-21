@@ -13,6 +13,8 @@
     "GitHub",
     "GitHub Actions",
     "Azure DevOps",
+    "Azure Insights",
+    "Azure KeyVault",
     "Metodologías ágiles",
     "Scrum",
     "CQRS",
@@ -23,6 +25,8 @@
     "Oracle",
     "Informix",
     "MongoDB",
+    "Redis cache",
     "Figma",
-    "Json Web Token"
+    "Json Web Token",
+    "SignalR"
 ]
