@@ -1,92 +1,186 @@
-[
+{
+  "es": [
     {
-        "startDate": "2024-04",
-        "endDate": "",
-        "name": "Smart links - UltraGroup",
-        "position": "Desarrollador Backend .Net",
-        "responsabilities": [
-            "Desarrollar nuevas funcionalidades a diferentes web apis en .net 8",
-            "Dar soporte técnico backend a diferentes web apis con los frameworks .net framework 4.8, .net core 3.1 y .net 8",
-            "Manejar base de datos no SQL con MongoDB y de base de datos SQL con SQL Server ",
-            "Gestionar work items y tareas con Azure DevOps",
-            "Gestionar las versiones del código con un repositorio en Azure DevOps",
-            "Utilizar los Key Vaults de Azure para el almacenamiento de llaves secretas", 
-            "Gestionar la caché con Redis Caché en Azure",
-            "Usar Azure Insights para el monitoreo de la aplicación",
-            "Implementar funcionalidad en tiempo real con SignalR"
-        ],
-        "skills": [
-            ".Net",
-            "C#",
-            "Arquitectura limpia",
-            "Git",
-            "MongoDB",
-            "SQL Server",
-            "Azure DevOps",
-            "Azure Insights",
-            "Azure KeyVault",
-            "Redis cache",
-            "SignalR"
-        ]
+      "startDate": "2024-04",
+      "endDate": "",
+      "name": "Smart links - UltraGroup",
+      "position": "Desarrollador Backend .Net",
+      "responsabilities": [
+        "Desarrollar nuevas funcionalidades a diferentes web apis en .net 8",
+        "Dar soporte técnico backend a diferentes web apis con los frameworks .net framework 4.8, .net core 3.1 y .net 8",
+        "Manejar base de datos no SQL con MongoDB y de base de datos SQL con SQL Server ",
+        "Gestionar work items y tareas con Azure DevOps",
+        "Gestionar las versiones del código con un repositorio en Azure DevOps",
+        "Utilizar los Key Vaults de Azure para el almacenamiento de llaves secretas", 
+        "Gestionar la caché con Redis Caché en Azure",
+        "Usar Azure Insights para el monitoreo de la aplicación",
+        "Implementar funcionalidad en tiempo real con SignalR"
+      ],
+      "skills": [
+        ".Net",
+        "C#",
+        "Arquitectura limpia",
+        "Git",
+        "MongoDB",
+        "SQL Server",
+        "Azure DevOps",
+        "Azure Insights",
+        "Azure KeyVault",
+        "Redis cache",
+        "SignalR"
+      ]
     },
     {
-        "startDate": "2023-11",
-        "endDate": "2024-04",
-        "name": "Gestion Integral Para Control De Obras SAS",
-        "position": "Desarrollador de software",
-        "responsabilities": [
-            "Desarrollar nuevas funcionalidades a una web api con C# .Net Core 3.1 con arquitectura limpia",
-            "Desarrollar nuevas funcionalidades de FrontEnd con Angular",
-            "Dar soporte al código y desarrollar nuevas funcionalidades  a un software web en Visual Basic .Net Framework 4.8 y Javascript",
-            "Manejar base de datos SQL Server",
-            "Gestionar las historias de usuario y tareas con Azure DevOps",
-            "Gestionar las versiones del código con un repositorio en Azure DevOps",
-            "Adoptar el marco de trabajo ágil SCRUM",
-            "Implementar la autenticación de la aplicación con Amazon Cognito"
-        ],
-        "skills": [
-            ".Net",
-            "Angular",
-            "C#",
-            "TypeScript",
-            "Visual Basic",
-            "JQuery",
-            "Ajax",
-            "Arquitectura limpia",
-            "Git",
-            "Scrum",
-            "SQL Server",
-            "Azure DevOps",
-            "Json Web Token"
-        ]
+      "startDate": "2023-11",
+      "endDate": "2024-04",
+      "name": "Gestion Integral Para Control De Obras SAS",
+      "position": "Desarrollador de software",
+      "responsabilities": [
+        "Desarrollar nuevas funcionalidades a una web api con C# .Net Core 3.1 con arquitectura limpia",
+        "Desarrollar nuevas funcionalidades de FrontEnd con Angular",
+        "Dar soporte al código y desarrollar nuevas funcionalidades  a un software web en Visual Basic .Net Framework 4.8 y Javascript",
+        "Manejar base de datos SQL Server",
+        "Gestionar las historias de usuario y tareas con Azure DevOps",
+        "Gestionar las versiones del código con un repositorio en Azure DevOps",
+        "Adoptar el marco de trabajo ágil SCRUM",
+        "Implementar la autenticación de la aplicación con Amazon Cognito"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "C#",
+        "TypeScript",
+        "Visual Basic",
+        "JQuery",
+        "Ajax",
+        "Arquitectura limpia",
+        "Git",
+        "Scrum",
+        "SQL Server",
+        "Azure DevOps",
+        "Json Web Token"
+      ]
     },
     {
-        "startDate": "2022-06",
-        "endDate": "2023-03",
-        "name": "Carvajal Servicios",
-        "position": "Ingeniero de desarrollo",
-        "responsabilities": [
-            "Desarrollar una web api en .Net 6 con arquitectura limpia", 
-            "Desarrollar una api Gateway en .Net 6 con Ocelot",
-            "Agregar nuevas funcionalidades a un software web en MVC .Net 5",
-            "Manejar base de datos Oracle e informix",
-            "Implementar CI/CD con Azure DevOps",
-            "Realizar pruebas unitarias con XUnit",
-            "Adoptar el marco de trabajo ágil SCRUM"
-        ],
-        "skills": [
-            ".Net",
-            "Angular",
-            "C#",
-            "TypeScript",
-            "JQuery",
-            "Arquitectura limpia",
-            "Git",
-            "Scrum",
-            "Oracle",
-            "Informix",
-            "MongoDB",
-            "Azure DevOps"
-        ]
+      "startDate": "2022-06",
+      "endDate": "2023-03",
+      "name": "Carvajal Servicios",
+      "position": "Ingeniero de desarrollo",
+      "responsabilities": [
+        "Desarrollar una web api en .Net 6 con arquitectura limpia", 
+        "Desarrollar una api Gateway en .Net 6 con Ocelot",
+        "Agregar nuevas funcionalidades a un software web en MVC .Net 5",
+        "Manejar base de datos Oracle e informix",
+        "Implementar CI/CD con Azure DevOps",
+        "Realizar pruebas unitarias con XUnit",
+        "Adoptar el marco de trabajo ágil SCRUM"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "C#",
+        "TypeScript",
+        "JQuery",
+        "Arquitectura limpia",
+        "Git",
+        "Scrum",
+        "Oracle",
+        "Informix",
+        "MongoDB",
+        "Azure DevOps"
+      ]
     }
-]
+  ],
+  "en": [
+    {
+      "startDate": "2024-04",
+      "endDate": "",
+      "name": "Smart links - UltraGroup",
+      "position": ".Net Backend Developer",
+      "responsabilities": [
+        "Develop new features in various .net 8 web apis",
+        "Provide technical backend support to different web apis with .net framework 4.8, .net core 3.1 and .net 8 frameworks",
+        "Handle non-SQL databases with MongoDB and SQL databases with SQL Server",
+        "Manage work items and tasks with Azure DevOps",
+        "Manage code versions with an Azure DevOps repository",
+        "Use Azure Key Vaults for storing secret keys",
+        "Manage cache with Redis Cache in Azure",
+        "Use Azure Insights for application monitoring",
+        "Implement real-time functionality with SignalR"
+      ],
+      "skills": [
+        ".Net",
+        "C#",
+        "Clean Architecture",
+        "Git",
+        "MongoDB",
+        "SQL Server",
+        "Azure DevOps",
+        "Azure Insights",
+        "Azure KeyVault",
+        "Redis cache",
+        "SignalR"
+      ]
+    },
+    {
+      "startDate": "2023-11",
+      "endDate": "2024-04",
+      "name": "Gestion Integral Para Control De Obras SAS",
+      "position": "Software Developer",
+      "responsabilities": [
+        "Develop new features in a C# .Net Core 3.1 web api with clean architecture",
+        "Develop new FrontEnd features with Angular",
+        "Provide code support and develop new features in a Visual Basic .Net Framework 4.8 web software and Javascript",
+        "Handle SQL Server databases",
+        "Manage user stories and tasks with Azure DevOps",
+        "Manage code versions with an Azure DevOps repository",
+        "Adopt the SCRUM agile framework",
+        "Implement application authentication with Amazon Cognito"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "C#",
+        "TypeScript",
+        "Visual Basic",
+        "JQuery",
+        "Ajax",
+        "Clean Architecture",
+        "Git",
+        "Scrum",
+        "SQL Server",
+        "Azure DevOps",
+        "Json Web Token"
+      ]
+    },
+    {
+      "startDate": "2022-06",
+      "endDate": "2023-03",
+      "name": "Carvajal Servicios",
+      "position": "Development Engineer",
+      "responsabilities": [
+        "Develop a web api in .Net 6 with clean architecture", 
+        "Develop an api Gateway in .Net 6 with Ocelot",
+        "Add new features to a web software in MVC .Net 5",
+        "Handle Oracle and Informix databases",
+        "Implement CI/CD with Azure DevOps",
+        "Perform unit tests with XUnit",
+        "Adopt the SCRUM agile framework"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "C#",
+        "TypeScript",
+        "JQuery",
+        "Clean Architecture",
+        "Git",
+        "Scrum",
+        "Oracle",
+        "Informix",
+        "MongoDB",
+        "Azure DevOps"
+      ]
+    }
+  ]
+}

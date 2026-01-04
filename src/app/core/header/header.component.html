@@ -1,4 +1,4 @@
-<div class="nav-menu" [ngClass]="isNavbarFixed?'scrolled':'not-scrolled'" (scroll) = "onScroll()">
+<div class="nav-menu" [ngClass]="isNavbarFixed?'scrolled':'not-scrolled'" (scroll)="onScroll()">
     <button class="logo bg-white" routerLink="/" [fragment]="homeFragment" (click)="setActiveFragment(homeFragment)">
         <img src="/assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
         <p class="text-logo">Hernando Rumbo</p>
@@ -6,30 +6,50 @@
     <ul class="list-menu">
         <li *ngFor="let item of menuItems">
             <a [routerLink]="homePath" [fragment]="item.fragment" [ngClass]="{'active': activeFragment === item.fragment}"
-            (click)="setActiveFragment(item.fragment)">{{ item.title | titlecase }}</a>
+            (click)="setActiveFragment(item.fragment)">{{ item.title }}</a>
         </li>
     </ul>
-    <button aria-label="Open overlay button" class="icon-btn" (click)="overlay()"><i class="fa-solid fa-bars"></i></button>
+    <div class="header-actions">
+        <button aria-label="Toggle dark mode" class="icon-btn theme-btn" (click)="toggleDarkMode()" title="Toggle dark mode">
+            <i class="fa-solid" [ngClass]="currentTheme === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
+        </button>
+        <button aria-label="Toggle language" class="language-btn" (click)="toggleLanguage()" title="Toggle language">
+            {{ currentLanguage | uppercase }}
+        </button>
+        <button aria-label="Open overlay button" class="icon-btn menu-btn" (click)="overlay()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 </div>
 
 <!-- The overlay -->
-<div id="myNav" class="overlay"  [style.width]="isOverlayOpen ? '100%': '0'">
-
+<div id="myNav" class="overlay" [style.width]="isOverlayOpen ? '100%': '0'">
     <div class="overlay-bar">
         <button class="logo bg-white" (click)="overlay()" routerLink="/" fragment="">
             <img src="/assets/Logo.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
             <p class="text-logo">Hernando Rumbo</p>
         </button>
     
-        <button aria-label="Close overlay button" class="icon-btn close-btn" (click)="overlay()"><i class="fa-solid fa-xmark"></i></button>
+        <button aria-label="Close overlay button" class="icon-btn close-btn" (click)="overlay()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
 
     <div class="overlay-content">
         <ul class="list-menu-overlay">
             <li *ngFor="let item of menuItems">
-                <a [routerLink]="homePath" [fragment]="item.fragment" (click)="overlay()">{{ item.title | titlecase }}</a>
+                <a [routerLink]="homePath" [fragment]="item.fragment" (click)="setActiveFragment(item.fragment)">{{ item.title }}</a>
             </li>
         </ul>
+        <div class="overlay-actions">
+            <button class="overlay-action-btn" (click)="toggleLanguage()">
+                <i class="fa-solid fa-globe"></i>
+                <span>{{ currentLanguage | uppercase }}</span>
+            </button>
+            <button class="overlay-action-btn" (click)="toggleDarkMode()">
+                <i class="fa-solid" [ngClass]="currentTheme === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
+                <span>{{ currentTheme === 'dark' ? 'Light' : 'Dark' }}</span>
+            </button>
+        </div>
     </div>
-
 </div>

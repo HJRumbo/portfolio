@@ -1,50 +1,104 @@
 {
-    "skills": [
-        ".Net",
-        "Angular",
-        "TypeScript",
-        "CSS",
-        "HTML",
-        "C#",
-        "JavaScript",
-        "JQuery",
-        "Arquitectura limpia",
-        "Git",
-        "GitHub Actions",
-        "Metodologías ágiles",
-        "Scrum",
-        "CQRS",
-        "Patrones de diseño",
-        "Docker",
-        "SQL",
-        "SQL Server",
-        "Oracle",
-        "Informix",
-        "MongoDB",
-        "Figma"
+  "skills": {
+    "es": [
+      ".Net",
+      "Angular",
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "C#",
+      "JavaScript",
+      "JQuery",
+      "Arquitectura limpia",
+      "Git",
+      "GitHub Actions",
+      "Metodologías ágiles",
+      "Scrum",
+      "CQRS",
+      "Patrones de diseño",
+      "Docker",
+      "SQL",
+      "SQL Server",
+      "Oracle",
+      "Informix",
+      "MongoDB",
+      "Figma"
     ],
-    "educations": [
-        {
-            "institution": "Universidad Popular Del Cesar",
-            "career": "Especialización en ingeniería de software",
-            "startDate": "2023",
-            "endDate": "",
-            "city": "Valledupar, Cesar"
-        },
-        {
-            "institution": "Universidad Popular Del Cesar",
-            "career": "Ingeniería de sistemas",
-            "startDate": "2017",
-            "endDate": "2023",
-            "city": "Valledupar, Cesar"
-        }
-    ],
-    "certifications": [
-        {
-            "name": "Scrum Foundation Professional Certificate - SFPC™ (v2020)",
-            "expeditionDate": "2023-06",
-            "certifying": "Certiprof",
-            "link": "https://www.credly.com/badges/6644b48f-c6f2-4f62-b72e-c367932dca1a/linked_in_profile"
-        }
+    "en": [
+      ".Net",
+      "Angular",
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "C#",
+      "JavaScript",
+      "JQuery",
+      "Clean Architecture",
+      "Git",
+      "GitHub Actions",
+      "Agile Methodologies",
+      "Scrum",
+      "CQRS",
+      "Design Patterns",
+      "Docker",
+      "SQL",
+      "SQL Server",
+      "Oracle",
+      "Informix",
+      "MongoDB",
+      "Figma"
     ]
+  },
+  "educations": {
+    "es": [
+      {
+        "institution": "Universidad Popular Del Cesar",
+        "career": "Especialización en ingeniería de software",
+        "startDate": "2023",
+        "endDate": "",
+        "city": "Valledupar, Cesar"
+      },
+      {
+        "institution": "Universidad Popular Del Cesar",
+        "career": "Ingeniería de sistemas",
+        "startDate": "2017",
+        "endDate": "2023",
+        "city": "Valledupar, Cesar"
+      }
+    ],
+    "en": [
+      {
+        "institution": "Universidad Popular Del Cesar",
+        "career": "Specialization in Software Engineering",
+        "startDate": "2023",
+        "endDate": "",
+        "city": "Valledupar, Cesar"
+      },
+      {
+        "institution": "Universidad Popular Del Cesar",
+        "career": "Systems Engineering",
+        "startDate": "2017",
+        "endDate": "2023",
+        "city": "Valledupar, Cesar"
+      }
+    ]
+  },
+  "certifications": {
+    "es": [
+      {
+        "name": "Scrum Foundation Professional Certificate - SFPC™ (v2020)",
+        "expeditionDate": "2023-06",
+        "certifying": "Certiprof",
+        "link": "https://www.credly.com/badges/6644b48f-c6f2-4f62-b72e-c367932dca1a/linked_in_profile"
+      }
+    ],
+    "en": [
+      {
+        "name": "Scrum Foundation Professional Certificate - SFPC™ (v2020)",
+        "expeditionDate": "2023-06",
+        "certifying": "Certiprof",
+        "link": "https://www.credly.com/badges/6644b48f-c6f2-4f62-b72e-c367932dca1a/linked_in_profile"
+      }
+    ]
+  }
 }

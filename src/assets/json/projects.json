@@ -1,70 +1,142 @@
-[
+{
+  "es": [
     {
-        "startDate": "2023-08-01",
-        "endDate": "",
-        "name": "Mi portafolio web",
-        "position": "Desarrollador frontend",
-        "responsabilities": [
-            "Diseñar los mockups de mi portafolio web con figma",
-            "Desarrollar el portafolio web con Angular, HTML, CSS y TypeScript",
-            "Implementar GitHub Actions"
-        ],
-        "skills": [
-            "Angular",
-            "HTML",
-            "CSS",
-            "TypeScript",
-            "Figma",
-            "Git",
-            "GitHub Actions"
-        ]
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "name": "Mi portafolio web",
+      "position": "Desarrollador frontend",
+      "responsabilities": [
+        "Diseñar los mockups de mi portafolio web con figma",
+        "Desarrollar el portafolio web con Angular, HTML, CSS y TypeScript",
+        "Implementar GitHub Actions"
+      ],
+      "skills": [
+        "Angular",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "Figma",
+        "Git",
+        "GitHub Actions"
+      ]
     },
     {
-        "startDate": "2023-03-01",
-        "endDate": "2023-07-01",
-        "name": "GPCredit",
-        "position": "Desarrollador full stack",
-        "responsabilities": [
-            "Analizar los requerimientos del sistema para una aplicación web para una empresa prestadora de dinero",
-            "Diseñar el modelado UML y modelado de datos",
-            "Desarrollar la aplicación web con Angular y .Net Core",
-            "Implementar la autenticación y autorización con JWT y refresh token",
-            "Implementar Identity .Net para llevar el control de usuarios, roles y contraseñas",
-            "Implementar la arquitectura limpia"
-        ],
-        "skills": [
-            ".Net",
-            "Angular",
-            "Arquitectura limpia",
-            "ASP.NET Identity",
-            "Json Web Token",
-            "SQL Server",
-            "Git",
-            "C#",
-            "TypeScript"
-        ]
+      "startDate": "2023-03-01",
+      "endDate": "2023-07-01",
+      "name": "GPCredit",
+      "position": "Desarrollador full stack",
+      "responsabilities": [
+        "Analizar los requerimientos del sistema para una aplicación web para una empresa prestadora de dinero",
+        "Diseñar el modelado UML y modelado de datos",
+        "Desarrollar la aplicación web con Angular y .Net Core",
+        "Implementar la autenticación y autorización con JWT y refresh token",
+        "Implementar Identity .Net para llevar el control de usuarios, roles y contraseñas",
+        "Implementar la arquitectura limpia"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "Arquitectura limpia",
+        "ASP.NET Identity",
+        "Json Web Token",
+        "SQL Server",
+        "Git",
+        "C#",
+        "TypeScript"
+      ]
     },
     {
-        "startDate": "2022-01-01",
-        "endDate": "2022-06-01",
-        "name": "Software de recaudos",
-        "position": "Desarrollador full stack",
-        "responsabilities": [
-            "Análisar los requerimientos del sistema para una aplicación web para una empresa de vigilancia",
-            "Diseñar el modelado UML y modelado de datos", 
-            "Desarrollar la aplicación web Angular y .Net Core",
-            "Implementar la arquitectura en 3 capas",
-            "Implementar JWT para la autenticación y autorización"
-        ],
-        "skills": [
-            ".Net",
-            "Angular",
-            "Arquitectura en 3 capas",
-            "Json Web Token",
-            "SQL Server",
-            "Git",
-            "C#",
-            "TypeScript"
-        ]
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "name": "Software de recaudos",
+      "position": "Desarrollador full stack",
+      "responsabilities": [
+        "Análisar los requerimientos del sistema para una aplicación web para una empresa de vigilancia",
+        "Diseñar el modelado UML y modelado de datos",
+        "Desarrollar la aplicación web Angular y .Net Core",
+        "Implementar la arquitectura en 3 capas",
+        "Implementar JWT para la autenticación y autorización"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "Arquitectura en 3 capas",
+        "Json Web Token",
+        "SQL Server",
+        "Git",
+        "C#",
+        "TypeScript"
+      ]
     }
-]
+  ],
+  "en": [
+    {
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "name": "My Web Portfolio",
+      "position": "Frontend Developer",
+      "responsabilities": [
+        "Design the mockups of my web portfolio with figma",
+        "Develop the web portfolio with Angular, HTML, CSS and TypeScript",
+        "Implement GitHub Actions"
+      ],
+      "skills": [
+        "Angular",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "Figma",
+        "Git",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "startDate": "2023-03-01",
+      "endDate": "2023-07-01",
+      "name": "GPCredit",
+      "position": "Full Stack Developer",
+      "responsabilities": [
+        "Analyze system requirements for a web application for a money lending company",
+        "Design UML modeling and data modeling",
+        "Develop the web application with Angular and .Net Core",
+        "Implement authentication and authorization with JWT and refresh token",
+        "Implement Identity .Net to manage users, roles and passwords",
+        "Implement clean architecture"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "Clean Architecture",
+        "ASP.NET Identity",
+        "Json Web Token",
+        "SQL Server",
+        "Git",
+        "C#",
+        "TypeScript"
+      ]
+    },
+    {
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "name": "Collection Software",
+      "position": "Full Stack Developer",
+      "responsabilities": [
+        "Analyze system requirements for a web application for a security company",
+        "Design UML modeling and data modeling",
+        "Develop the web application with Angular and .Net Core",
+        "Implement the 3-layer architecture",
+        "Implement JWT for authentication and authorization"
+      ],
+      "skills": [
+        ".Net",
+        "Angular",
+        "3-Layer Architecture",
+        "Json Web Token",
+        "SQL Server",
+        "Git",
+        "C#",
+        "TypeScript"
+      ]
+    }
+  ]
+}
