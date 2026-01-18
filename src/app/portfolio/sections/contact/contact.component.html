@@ -1,18 +1,19 @@
 <div class="section-container contact-container">
-        <div class="logo-container">
-            <button class="logo bg-blue text-white" routerLink="/" fragment="">
-                <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
-            </button>
-            <p>Hernando Rumbo</p>
-        </div>
+    <div class="logo-container">
+        <button class="logo bg-blue text-white" routerLink="/" fragment="">
+            <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
+        </button>
+        <p>{{ sectionData.name }}</p>
+    </div>
 
-        
-        <div class="social-medias-container">
-            <div>
-                <p>Contacto</p>
-            </div>
-            <div *ngFor="let item of socialMedias" >
-                <a class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''" [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
-            </div>
+
+    <div class="social-medias-container">
+        <div>
+            <p>{{ sectionData.title }}</p>
         </div>
+        <div *ngFor="let item of socialMedias">
+            <a class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''"
+                [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
+        </div>
+    </div>
 </div>

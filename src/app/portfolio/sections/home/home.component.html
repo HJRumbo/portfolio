@@ -1,18 +1,18 @@
 <div id="" class="section-container grid-container">
     <div class="grid-items">
         <div class="title-section">
-            <h2 class="text-blue">¡Hola!</h2>
-            <h1>Soy Hernando Rumbo,</h1>
-            <p>un ingeniero de sistemas apasionado por el desarrollo de software.</p>
-            
+            <h2 class="text-blue">{{ sectionData.greeting }}</h2>
+            <h1>{{ sectionData.name }}</h1>
+            <p>{{ sectionData.subtitle }}</p>
+
             <button class="my-btn blue-btn" routerLink="/" fragment="about">
-                Más sobre mí
+                {{ sectionData.ctaButton }}
             </button>
         </div>
     </div>
     <div class="grid-items div-ilustration">
         <img class="ilustration" src="/assets/ilustration_lighter_lips.svg" alt="Ilustración de Hernando Rumbo">
-    </div>  
+    </div>
 </div>
 
 <app-about id="about"></app-about>

@@ -1,4 +1,16 @@
 {
+  "section": {
+    "es": {
+      "title": "Experiencia profesional",
+      "subtitle": "Aquí encontrará mis experiencias en las empresas en las que he colaborado.",
+      "presentLabel": "Presente"
+    },
+    "en": {
+      "title": "Professional experience",
+      "subtitle": "Here you will find my experiences in the companies where I have collaborated.",
+      "presentLabel": "Present"
+    }
+  },
   "es": [
     {
       "startDate": "2024-04",

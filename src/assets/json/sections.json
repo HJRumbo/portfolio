@@ -1,0 +1,70 @@
+{
+  "home": {
+    "es": {
+      "greeting": "¡Hola!",
+      "name": "Soy Hernando Rumbo,",
+      "subtitle": "un ingeniero de sistemas apasionado por el desarrollo de software.",
+      "ctaButton": "Más sobre mí"
+    },
+    "en": {
+      "greeting": "Hello!",
+      "name": "I'm Hernando Rumbo,",
+      "subtitle": "a systems engineer passionate about software development.",
+      "ctaButton": "More about me"
+    }
+  },
+  "about": {
+    "es": {
+      "title": "Sobre mí",
+      "description": "Soy un ingeniero de sistemas y estudiante de especialización en ingeniería de software apasionado por el desarrollo de software. Poseo más de 2 años de experiencia como desarrollador fullstack, trabajando con tecnologías como .Net y Angular, entre otras. Mi principal motivación es aprender y mejorar constantemente, siempre buscando ampliar mis habilidades y conocimientos en el campo de la ingeniería de software. Me considero una persona proactiva, comprometida y capaz de enfrentar desafíos con determinación.",
+      "skillsTitle": "Habilidades",
+      "educationTitle": "Educación",
+      "certificationsTitle": "Certificaciones",
+      "ctaButton": "Contáctame",
+      "presentLabel": "Presente"
+    },
+    "en": {
+      "title": "About me",
+      "description": "I am a systems engineer and a software engineering specialization student passionate about software development. I have more than 2 years of experience as a fullstack developer, working with technologies such as .Net and Angular, among others. My main motivation is to learn and constantly improve, always seeking to expand my skills and knowledge in the field of software engineering. I consider myself a proactive, committed person capable of facing challenges with determination.",
+      "skillsTitle": "Skills",
+      "educationTitle": "Education",
+      "certificationsTitle": "Certifications",
+      "ctaButton": "Contact me",
+      "presentLabel": "Present"
+    }
+  },
+  "experience": {
+    "es": {
+      "title": "Experiencia profesional",
+      "subtitle": "Aquí encontrará mis experiencias en las empresas en las que he colaborado.",
+      "presentLabel": "Presente"
+    },
+    "en": {
+      "title": "Professional experience",
+      "subtitle": "Here you will find my experiences in the companies where I have collaborated.",
+      "presentLabel": "Present"
+    }
+  },
+  "projects": {
+    "es": {
+      "title": "Proyectos",
+      "subtitle": "Aquí encontrará algunos de mis proyectos personales y proyectos en los que he colaborado.",
+      "presentLabel": "Presente"
+    },
+    "en": {
+      "title": "Projects",
+      "subtitle": "Here you will find some of my personal projects and projects I have collaborated on.",
+      "presentLabel": "Present"
+    }
+  },
+  "contact": {
+    "es": {
+      "title": "Contacto",
+      "name": "Hernando Rumbo"
+    },
+    "en": {
+      "title": "Contact",
+      "name": "Hernando Rumbo"
+    }
+  }
+}

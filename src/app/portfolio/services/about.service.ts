@@ -69,6 +69,16 @@ export class AboutService {
     );
   }
 
+  getSectionData(): Observable<any> {
+    return this.aboutDataSubject.asObservable().pipe(
+      map(data => {
+        if (!data || !data.section) return {};
+        const language = this.i18nService.getCurrentLanguage();
+        return data.section[language] || data.section['es'] || {};
+      })
+    );
+  }
+
   private transformAboutData(data: any): About {
     const language = this.i18nService.getCurrentLanguage();
     return {

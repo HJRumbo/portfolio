@@ -15,6 +15,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   skills!: string[];
   educationList!: Education[];
   certifications!: Certification[];
+  sectionData: any = {};
   private destroy$ = new Subject<void>();
 
   constructor(
@@ -35,6 +36,15 @@ export class AboutComponent implements OnInit, OnDestroy {
     this.getSkills();
     this.getEducationList();
     this.getCertifications();
+    this.loadSectionData();
+  }
+
+  private loadSectionData() {
+    this.aboutService.getSectionData()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(data => {
+        this.sectionData = data;
+      });
   }
 
   getSkills() {

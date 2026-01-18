@@ -38,4 +38,14 @@ export class ProjectsService {
       })
     );
   }
+
+  getSectionData(): Observable<any> {
+    return this.projectsDataSubject.asObservable().pipe(
+      map(data => {
+        if (!data || !data.section) return {};
+        const language = this.i18nService.getCurrentLanguage();
+        return data.section[language] || data.section['es'] || {};
+      })
+    );
+  }
 }

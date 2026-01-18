@@ -23,6 +23,7 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
   projects!: Project[];
+  sectionData: any = {};
   private destroy$ = new Subject<void>();
 
   constructor(
@@ -32,11 +33,15 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.loadProjects();
+    this.loadSectionData();
 
     // Reload when language changes
     this.i18nService.currentLanguage$
       .pipe(takeUntil(this.destroy$))
-      .subscribe(() => this.loadProjects());
+      .subscribe(() => {
+        this.loadProjects();
+        this.loadSectionData();
+      });
   }
 
   private loadProjects() {
@@ -44,6 +49,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.destroy$))
       .subscribe(projects => {
         this.projects = projects;
+      });
+  }
+
+  private loadSectionData() {
+    this.projectsService.getSectionData()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(data => {
+        this.sectionData = data;
       });
   }
 

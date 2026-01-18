@@ -1,40 +1,35 @@
 <div class="section-container grid-container">
     <div class="text-white">
-        <h2 class="title-section">Sobre mí</h2>
-        <p class="justified-text">Soy un ingeniero de sistemas y estudiante de especialización en ingeniería de
-            software apasionado por el desarrollo de software. Poseo más de 2 años
-            de experiencia como desarrollador fullstack, trabajando con tecnologías como .Net y Angular, entre
-            otras. Mi principal motivación es aprender y mejorar constantemente, siempre buscando ampliar mis
-            habilidades y conocimientos en el campo de la ingeniería de software. Me considero una persona
-            proactiva, comprometida y capaz de enfrentar desafíos con determinación.</p>
+        <h2 class="title-section">{{ sectionData.title }}</h2>
+        <p class="justified-text">{{ sectionData.description }}</p>
         <div class="btn-contact" routerLink="" fragment="contact">
             <button class="my-btn white-btn-outline">
-                Contáctame
+                {{ sectionData.ctaButton }}
             </button>
         </div>
     </div>
     <div class="text">
-        <h2 class="text-white title-section">Habilidades</h2>
+        <h2 class="text-white title-section">{{ sectionData.skillsTitle }}</h2>
         <div class="skills-container">
             <span class="skill" *ngFor="let skill of skills">{{ skill }}</span>
         </div>
     </div>
     <div class="text-white">
-        <h2 class="title-section">Educación</h2>
+        <h2 class="title-section">{{ sectionData.educationTitle }}</h2>
         <hr>
         <div *ngFor="let education of educationList">
             <p><strong>{{ education.career }}</strong></p>
             <p>{{ education.institution }}</p>
 
             <div class="date-city italic-text">
-                <p>{{ education.startDate }} - {{ education.endDate ? education.endDate : 'Presente' }}</p>
+                <p>{{ education.startDate }} - {{ education.endDate ? education.endDate : sectionData.presentLabel }}</p>
                 <p>{{ education.city }}</p>
             </div>
             <hr>
         </div>
     </div>
     <div class="text-white">
-        <h2 class="title-section">Certificaciones</h2>
+        <h2 class="title-section">{{ sectionData.certificationsTitle }}</h2>
         <hr>
         <div *ngFor="let certification of certifications">
             <p>{{ certification.name }}</p>

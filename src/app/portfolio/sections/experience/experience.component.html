@@ -1,12 +1,12 @@
 <div class="section-container">
     <div class="title-section">
-        <h2><strong><span class="text-blue">Experiencia</span> profesional</strong></h2>
-        <p>Aquí encontrará mis experiencias en las empresas en las que he colaborado.</p>
+        <h2><strong><span class="text-blue">{{ sectionData.title?.split(' ')[0] }}</span> {{ sectionData.title?.split(' ').slice(1).join(' ') }}</strong></h2>
+        <p>{{ sectionData.subtitle }}</p>
     </div>
 
     <div class="experience-card" *ngFor="let project of projects">
         <div>
-            <p class="light-text">{{ project.startDate | date: 'MMM y' | titlecase }} - {{ !project.endDate ? 'Presente': project.endDate | date: 'MMM y' | titlecase }}</p>
+            <p class="light-text">{{ project.startDate | date: 'MMM y' | titlecase }} - {{ !project.endDate ? sectionData.presentLabel: project.endDate | date: 'MMM y' | titlecase }}</p>
         </div>
         <div>
             <h3><strong>{{ project.name }}</strong></h3>

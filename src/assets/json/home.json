@@ -1,0 +1,14 @@
+{
+  "es": {
+    "greeting": "¡Hola!",
+    "name": "Soy Hernando Rumbo,",
+    "subtitle": "un ingeniero de sistemas apasionado por el desarrollo de software.",
+    "ctaButton": "Más sobre mí"
+  },
+  "en": {
+    "greeting": "Hello!",
+    "name": "I'm Hernando Rumbo,",
+    "subtitle": "a systems engineer passionate about software development.",
+    "ctaButton": "More about me"
+  }
+}

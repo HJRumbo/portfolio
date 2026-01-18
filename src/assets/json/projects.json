@@ -1,4 +1,16 @@
 {
+  "section": {
+    "es": {
+      "title": "Proyectos",
+      "subtitle": "Aquí encontrará algunos de mis proyectos personales y proyectos en los que he colaborado.",
+      "presentLabel": "Presente"
+    },
+    "en": {
+      "title": "Projects",
+      "subtitle": "Here you will find some of my personal projects and projects I have collaborated on.",
+      "presentLabel": "Present"
+    }
+  },
   "es": [
     {
       "startDate": "2023-08-01",
