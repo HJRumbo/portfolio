@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   socialMedias = [
     {
       icon: 'fa-regular fa-envelope',
-      link: 'mailto: hernandojosern@gmail.com"',
+      link: 'mailto:hernandojosern@gmail.com',
       ariaLabel: 'Enlace a mi email',
       newTab: false
     },

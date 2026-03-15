@@ -1,19 +1,32 @@
-<div class="section-container contact-container">
-    <div class="logo-container">
-        <button class="logo bg-blue text-white" routerLink="/" fragment="">
-            <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
-        </button>
-        <p>{{ sectionData.name }}</p>
-    </div>
+﻿<div class="section-container contact-container">
+  <div class="contact-left">
+    <button class="logo bg-blue text-white" routerLink="/" fragment="">
+      <img src="/assets/Logo_white.svg" alt="Logo de Hernando Rumbo" width="32" height="32">
+    </button>
 
+    <div class="contact-info">
+      <p class="name">{{ sectionData.name }}</p>
+      <p class="location">{{ sectionData.location }}</p>
+    </div>
+  </div>
+
+  <div class="contact-center">
+    <p class="title">{{ sectionData.title }}</p>
+    <p class="subtitle">{{ sectionData.subtitle }}</p>
 
     <div class="social-medias-container">
-        <div>
-            <p>{{ sectionData.title }}</p>
-        </div>
-        <div *ngFor="let item of socialMedias">
-            <a class="a-icons" [href]="item.link" [target]="item.newTab ? '_blank' : ''"
-                [attr.aria-label]="item.ariaLabel"><i [class]="item.icon"></i></a>
-        </div>
+      <a *ngFor="let item of socialMedias"
+         class="a-icons"
+         [href]="item.link"
+         [target]="item.newTab ? '_blank' : ''"
+         [attr.aria-label]="item.ariaLabel">
+        <i [class]="item.icon"></i>
+      </a>
     </div>
+  </div>
+
+  <div class="contact-right">
+    <p class="note">{{ sectionData.note }}</p>
+  </div>
 </div>
+

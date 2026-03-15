@@ -1,10 +1,16 @@
-{
+﻿{
   "es": {
     "title": "Contacto",
-    "name": "Hernando Rumbo"
+    "name": "Hernando Rumbo",
+    "location": "Valledupar, Cesar - Colombia",
+    "subtitle": "¿Tienes un proyecto en mente? Escríbeme.",
+    "note": "Respondemos rápido y con buena onda."
   },
   "en": {
     "title": "Contact",
-    "name": "Hernando Rumbo"
+    "name": "Hernando Rumbo",
+    "location": "Valledupar, Cesar - Colombia",
+    "subtitle": "Have a project in mind? Send me a message.",
+    "note": "I usually reply quickly — let\u0027s build something together!"
   }
 }
