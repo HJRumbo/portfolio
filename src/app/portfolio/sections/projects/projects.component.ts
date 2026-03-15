@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ProjectsService } from '../../services/projects.service';
 import { Project } from '../../models/project';
 import { I18nService } from '../../../core/services/i18n.service';
@@ -28,12 +29,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   constructor(
     private projectsService: ProjectsService,
-    private i18nService: I18nService
+    private i18nService: I18nService,
+    private meta: Meta
   ) {}
 
   ngOnInit(): void {
     this.loadProjects();
     this.loadSectionData();
+    this.setMetaTags();
 
     // Reload when language changes
     this.i18nService.currentLanguage$
@@ -58,6 +61,13 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       .subscribe(data => {
         this.sectionData = data;
       });
+  }
+
+  private setMetaTags() {
+    this.meta.updateTag({ name: 'description', content: 'Explora los proyectos personales de Hernando Rumbo, desarrollador de software especializado en .NET y Angular.' });
+    this.meta.updateTag({ name: 'keywords', content: 'proyectos, portafolio, desarrollo, .NET, Angular, Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:title', content: 'Proyectos de Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:description', content: 'Descubre los proyectos y trabajos realizados por Hernando Rumbo.' });
   }
 
   ngOnDestroy() {

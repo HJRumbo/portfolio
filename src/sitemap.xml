@@ -10,6 +10,31 @@
 <url>
   <loc>https://hernando-rumbo.netlify.app/</loc>
   <lastmod>2023-09-13T17:20:21+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://hernando-rumbo.netlify.app/about</loc>
+  <lastmod>2023-09-13T17:20:21+00:00</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://hernando-rumbo.netlify.app/experience</loc>
+  <lastmod>2023-09-13T17:20:21+00:00</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://hernando-rumbo.netlify.app/projects</loc>
+  <lastmod>2023-09-13T17:20:21+00:00</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://hernando-rumbo.netlify.app/contact</loc>
+  <lastmod>2023-09-13T17:20:21+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 
 

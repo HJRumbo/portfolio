@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { Certification, Education } from '../../models/about';
 import { AboutService } from '../../services/about.service';
 import { I18nService } from '../../../core/services/i18n.service';
@@ -20,11 +21,13 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   constructor(
     private aboutService: AboutService,
-    public i18nService: I18nService
+    public i18nService: I18nService,
+    private meta: Meta
   ) { }
 
   ngOnInit(): void {
     this.loadData();
+    this.setMetaTags();
 
     // Reload data when language changes
     this.i18nService.currentLanguage$
@@ -63,6 +66,13 @@ export class AboutComponent implements OnInit, OnDestroy {
     this.aboutService.getCertifications()
       .pipe(takeUntil(this.destroy$))
       .subscribe(certifications => this.certifications = certifications);
+  }
+
+  private setMetaTags() {
+    this.meta.updateTag({ name: 'description', content: 'Conoce más sobre Hernando Rumbo: su educación, habilidades y certificaciones como desarrollador de software.' });
+    this.meta.updateTag({ name: 'keywords', content: 'acerca de, educación, habilidades, certificaciones, Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:title', content: 'Acerca de Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:description', content: 'Descubre la formación académica y experiencia profesional de Hernando Rumbo.' });
   }
 
   ngOnDestroy() {

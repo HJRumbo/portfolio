@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ContactService } from '../../services/contact.service';
 import { I18nService } from '../../../core/services/i18n.service';
 import { Subject } from 'rxjs';
@@ -42,11 +43,13 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   constructor(
     private contactService: ContactService,
-    private i18nService: I18nService
+    private i18nService: I18nService,
+    private meta: Meta
   ) {}
 
   ngOnInit(): void {
     this.loadSectionData();
+    this.setMetaTags();
 
     // Reload when language changes
     this.i18nService.currentLanguage$
@@ -60,6 +63,13 @@ export class ContactComponent implements OnInit, OnDestroy {
       .subscribe(data => {
         this.sectionData = data;
       });
+  }
+
+  private setMetaTags() {
+    this.meta.updateTag({ name: 'description', content: 'Contacta a Hernando Rumbo para proyectos de desarrollo de software. Redes sociales y información de contacto.' });
+    this.meta.updateTag({ name: 'keywords', content: 'contacto, email, LinkedIn, GitHub, Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:title', content: 'Contacto - Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:description', content: 'Ponte en contacto con Hernando Rumbo para colaboraciones o consultas.' });
   }
 
   ngOnDestroy() {

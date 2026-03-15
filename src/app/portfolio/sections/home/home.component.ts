@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { HomeService } from '../../services/home.service';
 import { I18nService } from '../../../core/services/i18n.service';
 import { Subject } from 'rxjs';
@@ -15,11 +16,13 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(
     private homeService: HomeService,
-    private i18nService: I18nService
+    private i18nService: I18nService,
+    private meta: Meta
   ) {}
 
   ngOnInit(): void {
     this.loadSectionData();
+    this.setMetaTags();
 
     // Reload when language changes
     this.i18nService.currentLanguage$
@@ -33,6 +36,14 @@ export class HomeComponent implements OnInit, OnDestroy {
       .subscribe(data => {
         this.sectionData = data;
       });
+  }
+
+  private setMetaTags() {
+    this.meta.updateTag({ name: 'description', content: 'Portafolio de Hernando Rumbo, desarrollador de software con experiencia en .NET y Angular.' });
+    this.meta.updateTag({ name: 'keywords', content: 'portafolio, desarrollador, software, .NET, Angular, Hernando Rumbo' });
+    this.meta.updateTag({ property: 'og:title', content: 'Hernando Rumbo - Desarrollador de Software' });
+    this.meta.updateTag({ property: 'og:description', content: 'Explora mi portafolio y conoce mi experiencia en desarrollo de software.' });
+    this.meta.updateTag({ property: 'og:image', content: '/assets/og-image.jpg' });
   }
 
   ngOnDestroy() {
