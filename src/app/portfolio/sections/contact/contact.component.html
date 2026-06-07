@@ -11,7 +11,10 @@
   </div>
 
   <div class="contact-center">
-    <p class="title">{{ sectionData.title }}</p>
+    <p class="title" appTypewrite 
+                [text]="sectionData.title" 
+                [speed]="240" [loopDelay]="5000" 
+                [deleteSpeed]="100"></p>
     <p class="subtitle">{{ sectionData.subtitle }}</p>
 
     <div class="social-medias-container">

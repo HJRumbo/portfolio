@@ -1,7 +1,10 @@
 <div id="" class="section-container grid-container">
     <div class="grid-items">
         <div class="title-section">
-            <h2 class="text-blue">{{ sectionData.greeting }}</h2>
+            <h2 class="text-blue" appTypewrite 
+                [text]="sectionData.greeting" 
+                [speed]="240" [loopDelay]="5000" 
+                [deleteSpeed]="100"></h2>
             <h1>{{ sectionData.name }}</h1>
             <p>{{ sectionData.subtitle }}</p>
 

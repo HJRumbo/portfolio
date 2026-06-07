@@ -98,6 +98,29 @@ p {
   color: var(--color-text);
 }
 
+/* Global typewriter caret and behavior */
+.typewriter {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 6px;
+  vertical-align: bottom;
+  animation: tw-blink 1s steps(1) infinite;
+}
+
+@keyframes tw-blink {
+  50% { opacity: 0; }
+}
+
 /* Alternating section backgrounds for contrast */
 .section-container:nth-child(even) {
   background-color: var(--color-bg-secondary);
